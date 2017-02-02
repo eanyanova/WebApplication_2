@@ -18,5 +18,10 @@ namespace lab2
         {
             SqlDataSource3.Insert();
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("WebForm2.aspx");
+        }
     }
 }

@@ -20,7 +20,9 @@
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbLab2ConnectionString %>" SelectCommand="SELECT DISTINCT LESSON.DATE AS Date, LESSON.NAME AS Lesson, STUDENT.NAME AS Student FROM REGISTRATION INNER JOIN LESSON ON REGISTRATION.LESSON = LESSON.ID INNER JOIN STUDENT ON REGISTRATION.STUDENT = STUDENT.ID"></asp:SqlDataSource>
     
-        <asp:Button ID="Button1" runat="server" Text="Назад" />
+        <asp:Button ID="Button1" runat="server" Text="Добавить" OnClick="Button1_Click" />
+    
+        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Админка" />
     
     </div>
     </form>

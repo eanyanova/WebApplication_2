@@ -28,7 +28,7 @@
                 <asp:ControlParameter ControlID="Lesson" DefaultValue="ID" Name="LESSON" PropertyName="SelectedValue" />
             </InsertParameters>
         </asp:SqlDataSource>
-        <asp:Button ID="Button2" runat="server" Text="Расписание" />
+        <asp:Button ID="Button2" runat="server" Text="Расписание" OnClick="Button2_Click" />
     </form>
 </body>
 </html>
